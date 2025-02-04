@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eye State Monitor</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Real-time Eye State Detection</h1>
+    <!-- Hidden video element to capture the local camera feed -->
+    <video id="captureVideo" autoplay muted playsinline style="display:none;"></video>
+    <!-- Image element to display the processed frame with bounding boxes -->
+    <img id="processedImg" width="640" height="480" alt="Processed Video Feed">
+    <div id="stats">
+        <h3>Statistics:</h3>
+        <p>Current State: <span id="currentState">-</span></p>
+        <p>Duration: <span id="duration">0</span> seconds</p>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
